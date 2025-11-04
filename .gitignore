@@ -10,3 +10,5 @@ ml_env/
 data/
 model/
 reports/
+/data
+/model

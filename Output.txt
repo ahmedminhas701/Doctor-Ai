@@ -1,0 +1,261 @@
+# DoctorAI Chatbot Conversation Examples
+
+## Scenario 1: Complete Disease Diagnosis Flow
+
+### User starts with greeting
+**User:** "Hi"
+**Bot:** "👋 Hello! I'm DoctorAi, your virtual health assistant. I'm here to help you identify possible conditions based on your symptoms.
+
+How are you feeling today?"
+
+### User describes symptoms
+**User:** "I have headache and fever"
+**Bot:** "I identified the following symptoms from your input: headache, fever.
+
+Do these look correct? Please type 'yes' to confirm or rewrite your symptoms."
+
+### User confirms symptoms
+**User:** "yes"
+**Bot:** "Based on the symptoms you've shared, I believe the most likely condition is: **Influenza**, which falls under the **Infectious** category.
+
+ℹ️ Infectious diseases are caused by pathogenic microorganisms such as bacteria, viruses, parasites or fungi that can be spread directly or indirectly from one person to another.
+
+Here is a visualization of count of diseases per category:
+
+[IMAGE: category_dist.png generated]
+
+Would you like personalized recommendations for:
+1️⃣ Diet
+2️⃣ Exercise
+3️⃣ Medicine?"
+
+### User asks for diet recommendations
+**User:** "diet"
+**Bot:** "🍎 Recommended Foods:
+- Chicken Soup (250 cal) | Nutrients: Protein, vitamins
+- Orange Juice (110 cal) | Nutrients: Vitamin C
+- Ginger Tea (25 cal) | Nutrients: Anti-inflammatory compounds
+- Honey (64 cal) | Nutrients: Antioxidants
+- Bananas (105 cal) | Nutrients: Potassium, vitamin B6
+- Greek Yogurt (100 cal) | Nutrients: Probiotics, protein
+- Green Tea (2 cal) | Nutrients: Antioxidants
+
+[IMAGE: nutritional_profile.png generated]"
+
+### User asks for exercise recommendations
+**User:** "exercise"
+**Bot:** "🏋️ Recommended Exercises:
+
+- Light Walking (Low) | Benefits: Improves circulation, gentle movement
+- Gentle Stretching (Low) | Benefits: Maintains flexibility, reduces stiffness
+- Deep Breathing (Low) | Benefits: Improves oxygen flow, relaxation
+- Yoga (Low) | Benefits: Stress relief, gentle movement
+- Tai Chi (Low) | Benefits: Balance, gentle exercise
+
+[IMAGE: category_ex.png generated]"
+
+### User asks for medicine recommendations
+**User:** "medicine"
+**Bot:** "💊 Recommended Medicines:
+
+- Paracetamol: 500mg every 4-6 hours | Notes: For fever and pain relief
+- Ibuprofen: 200-400mg every 6-8 hours | Notes: Anti-inflammatory, take with food
+- Aspirin: 325-650mg every 4 hours | Notes: Avoid if under 18 due to Reye's syndrome
+- Cough Syrup: As directed on label | Notes: For dry cough relief
+- Throat Lozenges: As needed | Notes: For sore throat relief
+
+[IMAGE: category_med.png generated]
+
+⚠️ Important:
+• Always consult your doctor before taking any medication
+• Report any side effects immediately
+• Never share medications with others
+• Follow dosage instructions carefully"
+
+---
+
+## Scenario 2: Service Request - PDF Report Generation
+
+### User requests a report directly
+**User:** "Can you make me a PDF report?"
+**Bot:** "Sure, I'll prepare a health report for you.
+Let's start with your name:"
+
+### Bot collects user information
+**User:** "John Smith"
+**Bot:** "Great. What's your age?"
+
+**User:** "28"
+**Bot:** "Got it. Are you male or female?"
+
+**User:** "male"
+**Bot:** "✅ Noted. Where are you located? (This is optional)"
+
+**User:** "New York"
+**Bot:** "✅ Report generated successfully!"
+
+---
+
+## Scenario 3: Service Request - Diet Plan
+
+### User asks for diet plan
+**User:** "Can you give me a weekly diet plan?"
+**Bot:** "⚠️ Please describe your symptoms first so I can recommend appropriate foods."
+
+### User provides symptoms first
+**User:** "I have stomach pain and nausea"
+**Bot:** "I identified the following symptoms from your input: stomach pain, nausea.
+
+Do these look correct? Please type 'yes' to confirm or rewrite your symptoms."
+
+**User:** "yes"
+**Bot:** "Based on the symptoms you've shared, I believe the most likely condition is: **Gastritis**, which falls under the **Gastrointestinal** category.
+
+ℹ️ Gastrointestinal diseases affect the digestive system including stomach, intestines, liver, and other digestive organs.
+
+[IMAGE: category_dist.png generated]
+
+Would you like personalized recommendations for:
+1️⃣ Diet
+2️⃣ Exercise  
+3️⃣ Medicine?"
+
+### User asks for diet plan again
+**User:** "diet plan"
+**Bot:** "🍽️ Your Personalized 7-Day Diet Plan:
+
+📅 Monday:
+  - Breakfast: White Rice (205 cal) | Carbs: 45g | Fat: 0.4g | Sugar: 0.1g | Sodium: 2mg
+    Nutrients: Carbohydrates, easy to digest
+  - Lunch: Boiled Chicken (231 cal) | Carbs: 0g | Fat: 5g | Sugar: 0g | Sodium: 104mg
+    Nutrients: Lean protein, low fat
+  - Dinner: Banana (105 cal) | Carbs: 27g | Fat: 0.3g | Sugar: 14g | Sodium: 1mg
+    Nutrients: Potassium, easy on stomach
+  🔹 Daily Total: 541 cal | Carbs: 72g | Fat: 5.7g | Sugar: 14.1g | Sodium: 107mg
+
+📅 Tuesday:
+  - Breakfast: Toast (White Bread) (79 cal) | Carbs: 14g | Fat: 1g | Sugar: 1.4g | Sodium: 147mg
+    Nutrients: Simple carbohydrates
+  - Lunch: Ginger Tea (25 cal) | Carbs: 6g | Fat: 0g | Sugar: 5g | Sodium: 3mg
+    Nutrients: Anti-nausea properties
+  - Dinner: Plain Crackers (62 cal) | Carbs: 10g | Fat: 2g | Sugar: 0.2g | Sodium: 135mg
+    Nutrients: Bland, easy to digest
+  🔹 Daily Total: 166 cal | Carbs: 30g | Fat: 3g | Sugar: 6.6g | Sodium: 285mg
+
+[... continues for all 7 days]"
+
+---
+
+## Scenario 4: Multi-language Support
+
+### User writes in Urdu
+**User:** "میں بیمار ہوں، urdu mein jawab do"
+**Bot:** "آپ کے علائم کی بنیاد پر، میں یہ ممکنہ حالت سمجھتا ہوں: **نزلہ زکام**، جو **متعدی** کیٹگری میں آتا ہے۔
+
+کیا آپ ذاتی تجاویز چاہتے ہیں:
+1️⃣ خوراک
+2️⃣ ورزش  
+3️⃣ دوائی"
+
+---
+
+## Scenario 5: Gratitude Handling
+
+### User expresses thanks
+**User:** "Thank you so much for your help!"
+**Bot:** "You're very welcome! 😊
+
+Warm regards,
+**DoctorAi**"
+
+---
+
+## Scenario 6: Uncertain Input (Gemini Fallback)
+
+### User gives unclear symptoms
+**User:** "I don't feel good, something is wrong"
+**Bot:** "Based on your description, you seem to be experiencing general discomfort or malaise. This could be related to various conditions such as viral infections, stress, fatigue, or early signs of illness.
+
+The symptoms you're describing could fall under the **General** or **Infectious** category, potentially indicating a viral infection or general fatigue syndrome.
+
+This condition involves feeling unwell without specific symptoms and can be caused by various factors including viral infections, stress, lack of sleep, or early stages of other illnesses.
+
+Do you want a diet, exercise or medicine recommendation?"
+
+---
+
+## Scenario 7: Exercise Plan Request
+
+### User asks for exercise plan
+**User:** "give me exercise routine"
+**Bot:** "⚠️ Please describe your symptoms first so I can recommend appropriate exercises."
+
+### After symptoms are diagnosed
+**User:** "I have back pain"
+**Bot:** [After diagnosis process]
+
+**User:** "exercise plan"
+**Bot:** "🏋️ Your Personalized 7-Day Exercise Plan:
+
+📅 Monday:
+  - Exercise: Gentle Back Stretches (Musculoskeletal)
+  - Intensity: Low
+  - Calories Burned: ~50 (30 min) | ~100 (1 hr)
+  - Benefits: Improves flexibility, reduces muscle tension
+  💡 Tip: Stay hydrated during your workout 💧
+
+📅 Tuesday:
+  - Exercise: Swimming (Musculoskeletal)  
+  - Intensity: Moderate
+  - Calories Burned: ~200 (30 min) | ~400 (1 hr)
+  - Benefits: Low impact, strengthens core
+  💡 Tip: Warm up for 5-10 minutes before exercising 🔥
+
+[... continues for all 7 days]"
+
+---
+
+## API Usage Examples
+
+### Starting a session:
+```
+POST /chat/start
+Response: {"session_id": "uuid-here", "message": "New chat session started"}
+```
+
+### Sending messages:
+```
+POST /chat/message
+{
+  "message": "I have fever and headache", 
+  "session_id": "uuid-here"
+}
+Response: {
+  "success": true,
+  "response": "Bot response here",
+  "image_path": "category_dist.png",
+  "language": "english",
+  "session_id": "uuid-here"
+}
+```
+
+### Getting images:
+```
+GET /chat/image/category_dist.png
+Response: [PNG Image File]
+```
+
+### Generating reports:
+```
+POST /report/generate/uuid-here
+{
+  "name": "John Smith",
+  "age": 28,
+  "gender": "male", 
+  "location": "New York"
+}
+Response: {
+  "success": true,
+  "download_url": "/report/download/John_Smith_DoctorAI_Report.pdf"
+}
+```
