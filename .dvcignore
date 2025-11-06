@@ -1,28 +1,16 @@
 # Add patterns of files dvc should ignore, which could improve
 # the performance. Learn more at
 # https://dvc.org/doc/user-guide/dvcignore
-# 1. Ignore everything in the project globally
+# 1. EXCLUDE all files and folders globally
 *
 
-# 2. UN-EXCLUDE (Re-include) the DVC-required files
+# 2. UN-EXCLUDE (Re-include) the specific file types DVC should track
+# The double asterisk (**) matches any directory depth.
+!**/*.pkl
+!**/*.json
+!**/*.csv
+
+# 3. UN-EXCLUDE necessary metadata files for DVC/Git
 !.dvcignore
 !dvc.yaml
 !.gitignore
-
-# 3. UN-EXCLUDE the data and model folders to allow DVC to look inside
-!data/
-!model/
-
-# 4. Exclude all contents inside data/ and model/ (re-applying the filter)
-data/*
-model/*
-
-# 5. UN-EXCLUDE specific file types inside the data/ and model/ folders
-# Use !**/*.ext to ensure deep files are caught, or use the direct path if only checking the top level
-!data/**/*.csv
-!data/**/*.json
-!data/**/*.pkl
-
-!model/**/*.csv
-!model/**/*.json
-!model/**/*.pkl

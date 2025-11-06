@@ -1,0 +1,7 @@
+{
+    "model": "multinomial_nb",
+    "best_params": {
+        "model__alpha": 0.5
+    },
+    "accuracy": 0.87
+}
