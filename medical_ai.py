@@ -1292,7 +1292,8 @@ class UncertainHandler:
             "Reproductive, Respiratory, Toxicology, Urinary, Mental Health, Surgical, Lymphatic.\n\n"
             "Give an easy description of the disease/category. "
             "After suggesting, only ask: 'Do you want a diet, exercise or medicine recommendation?'. "
-            "If the user input is off-topic, politely ask for symptoms again."
+            "If the user input is off-topic, give him polite reply for his"
+            "saying and then again politely ask for symptoms."
         )
 
         # Combine system prompt with user input
