@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
+ml_env/
+
+# DVC-tracked folders
+data/
+model/
+reports/
+/data
+/model
+"dvc-sa-key.json" 
+
+.dvc/config.local

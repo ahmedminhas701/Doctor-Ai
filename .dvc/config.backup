@@ -1,0 +1,8 @@
+[core]
+    remote = dagshub_remote
+
+[cache]
+    type = hardlink
+
+[remote "dagshub_remote"]
+    url = https://dagshub.com/ahmedminhas701/Doctor-Ai.dvc
